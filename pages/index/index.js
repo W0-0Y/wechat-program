@@ -16,6 +16,15 @@ Page({
     })
   },
   onLoad: function () {
+    // 获取用户当前的位置信息
+    wx.getLocation({
+      type: 'wgs84',
+      success: (res) => {
+        var latitude = res.latitude // 经度
+        var longitude = res.longitude // 纬度
+        console.log(res)
+      }
+    })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

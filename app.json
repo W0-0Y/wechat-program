@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/hybrid/hybrid"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -23,8 +24,12 @@
       {
         "pagePath":"pages/logs/logs",
         "text":"test-2"
+      },
+      {
+        "pagePath":"pages/hybrid/hybrid",
+        "text":"test-3"
       }
     ],
-    "position": "top"
+    "position": "bottom"
   }
 }
